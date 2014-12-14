@@ -7,6 +7,6 @@ var Text = React.createClass({
 
   render:function(){
     var style = this.extractStyle(false);
-    return <div style={style} class="shape">{this.props.properties.value}</div>;
+    return <div style={style} className="shape">{this.props.properties.value}</div>;
   }
 });

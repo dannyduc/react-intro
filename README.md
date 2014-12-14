@@ -9,3 +9,7 @@ Examples include:
 
 - Simple component
 - Shape Editor
+
+npm install -g react-tools
+
+jsx --watch src buid/

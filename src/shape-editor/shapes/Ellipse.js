@@ -7,8 +7,9 @@ var Ellipse = React.createClass({
 
   render:function(){
     var style = this.extractStyle(true);
-    style['border-radius'] = '50% 50%';
+    //style['border-radius'] = '50% 50%';
+    style['borderRadius'] = '50% 50%';
 
-    return <div style={style} class="shape" />;
+    return <div style={style} className="shape" />;
   }
 });

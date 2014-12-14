@@ -14,12 +14,12 @@ var ShapeParser = function(){
 
 
   function _extractShapeFromLine(line) {
-    var shapeStr = line.match(shapeRegex);
-    if (!shapeStr) return null;
+    var match = line.match(shapeRegex);
+    if (!match) return null;
 
-    var parts = shapeStr.input.split(' ');
-    var type = parts[0].trim(), // take the first part before the space
-      propPairs = parts.slice(1).join(' ').split(';');
+    var type = match[1],
+        parts = match.input.split(' '),
+        propPairs = parts.slice(1).join(' ').split(';');
 
     var shape = {
       type: type,

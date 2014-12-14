@@ -17,7 +17,20 @@ var ShapePropertyMixin = {
     var p = this.props.properties;
 
     var defaults = includeApperanceDefaults ? $.extend({}, this._appearanceDefaults) : { position: 'absolute' };
-    return $.extend(defaults, p);
+    defaults = $.extend(defaults, p);
+
+    var camelCaseKeyProps = {};
+    var self = this;
+    $.each(defaults, function(k, v) {
+      camelCaseKeyProps[self._toCamelCase(k)] = v;
+    });
+    return camelCaseKeyProps;
+  },
+
+  _toCamelCase: function(s) {
+    return s.replace(/(\-[a-z])/g, function(m){
+      return m.toUpperCase().replace('-', '');
+    });
   }
 
 };

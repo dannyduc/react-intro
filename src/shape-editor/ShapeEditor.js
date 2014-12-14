@@ -13,7 +13,7 @@ var ShapeEditor = React.createClass({
 
     var tree = (
       <div>
-        <textarea class="editor" onChange={this.handleTextChange} />
+        <textarea className="editor" onChange={this.handleTextChange} />
         <ShapeCanvas shapes={shapes} />
       </div>);
 

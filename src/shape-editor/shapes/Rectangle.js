@@ -7,6 +7,6 @@ var Rectangle = React.createClass({
 
   render:function(){
     var style = this.extractStyle(true);
-    return <div style={style} class="shape" />;
+    return <div style={style} className="shape" />;
   }
 });

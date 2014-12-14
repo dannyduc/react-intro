@@ -1,4 +1,34 @@
 var SHAPES = {
+  react: [
+    'React label',
+    'text value:React; color: #00D8FF; font-size: 48px; text-shadow: 1px 1px 3px #555; padding: 10px; left: 100px; top: 100px;',
+    '',
+    '// left logo',
+    'rect background:url(react.png) no-repeat; border: none; width: 38; height: 38; left: 60px; top: 120px;',
+    '',
+    '// right logo',
+    'rect background:url(react.png) no-repeat; border: none; width: 38; height: 38; left: 250px; top: 120px;'
+  ].join('\n'),
+
+  stickFigure: [
+    '--Stick Figure',
+    '',
+    '-- head',
+    'ellipse left: 150px;',
+    '',
+    '-- body',
+    'rect top: 111px; left: 197px; width: 5px;',
+    '',
+    '-- arm',
+    'rect top: 150px; left: 125px; height: 5px; width: 150;',
+    '',
+    '-- left leg',
+    'rect top: 209px; left: 177px; width: 5px; transform: rotate(15deg);',
+    '',
+    '-- right leg',
+    'rect top: 209px; left: 217px; width: 5px; transform: rotate(-15deg);'
+  ].join('\n'),
+
   robot: [
     '// shoulder',
     'rect background: white; height:25px; width: 150px; left: 20px; top: 100px;',
@@ -37,16 +67,6 @@ var SHAPES = {
     '',
     '// mouth',
     'ellipse width:40; height:5; background: gray; left: 70; top: 70; -webkit-transform:rotate(-10deg); border: 2px solid darkgray;'
-  ].join('\n'),
-
-  react: [
-    'React label',
-    'text value:React; color: #00D8FF; font-size: 48px; text-shadow: 1px 1px 3px #555; padding: 10px; left: 100px; top: 100px;',
-    '',
-    '// left logo',
-    'rect background:url(react.png) no-repeat; border: none; width: 38; height: 38; left: 60px; top: 120px;',
-    '',
-    '// right logo',
-    'rect background:url(react.png) no-repeat; border: none; width: 38; height: 38; left: 250px; top: 120px;'
   ].join('\n')
+
 };

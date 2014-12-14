@@ -17,7 +17,7 @@ var Simple = React.createClass({
       <div className="clicker" onMouseDown={this.handleMouseDown}>
         Give me the message!
       </div>
-      <div className="message">Message conveyed <span ref="counter" class="count">{this.state.count}</span> time(s)</div> </div>
+      <div className="message">Message conveyed <span ref="counter" className="count">{this.state.count}</span> time(s)</div> </div>
     ;
   }
 });

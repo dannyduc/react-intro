@@ -14,15 +14,13 @@ var Simple = React.createClass({
   render: function(){
 
     return <div>
-      <div class="clicker" onMouseDown={this.handleMouseDown}>
+      <div className="clicker" onMouseDown={this.handleMouseDown}>
         Give me the message!
       </div>
-      <div class="message">Message conveyed
-        <span ref="counter" class="count">{this.state.count}</span> time(s)</div>
-    </div>
+      <div className="message">Message conveyed <span ref="counter" class="count">{this.state.count}</span> time(s)</div> </div>
     ;
   }
 });
 
-React.renderComponent(<Simple message="Keep it Simple"/>,
+React.render(<Simple message="Keep it Simple"/>,
                   document.body);
